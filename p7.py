@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #Project Euler #7
 
 #What's the 10001st prime number?

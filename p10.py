@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #Find the sum of all primes below two million
 #Answer: 142913828922
 

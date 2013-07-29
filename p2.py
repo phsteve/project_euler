@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #Project Euler problem #2
 
 #Find the sum of all even terms in the Fibonacci sequence that do not exceed four million

@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #Project Euler #3
 
 #What is the largest prime factor of the number 600851475143?
@@ -8,14 +10,9 @@ import time
 
 import prime_tools
 
-#Compare a brute force method vs a method that uses a sieve of Eratosthenes to
+#Compare a brute force method vs a method that uses a sieve of Eratosthenes
 
 num = 600851475143
-
-# def find_2_factors(num):
-#     for d in range(2, int(math.sqrt(num))):
-#         if num % d == 0:
-#             return [num/d, d]
 
 def brute_factor(num):
     prime_factors = []

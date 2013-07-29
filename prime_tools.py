@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 #Collection of useful tools for working with prime numbers
 
 import math
@@ -5,14 +7,14 @@ import math
 def sieve(n):
     #creates a Sieve of Eratosthenes from 2 to n-1
     #Sieve is a dictionary where True indicates prime and False indicates nonprime
-    sieve = dict.fromkeys(range(2, n), True)
+    sv = dict.fromkeys(range(2, n), True)
     for num in range(2, int(math.sqrt(n))):
-        if sieve[num]:
+        if sv[num]:
             #print "checking multiples of %d" %(num)
             for i in range(2, n/num + 1):
                 #print "     %d is not prime, marking False" %(num * i)
-                sieve[num * i] = False
-    return sieve
+                sv[num * i] = False
+    return sv
 
 def isprime(num):
     #Brute force check if a number is prime by checking divisibility
